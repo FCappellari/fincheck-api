@@ -1,5 +1,7 @@
 import { Injectable } from '@nestjs/common';
 @Injectable()
 export class UsersService {
-  constructor() {}
+  getUserByID(userId: string) {
+    return userId;
+  }
 }
