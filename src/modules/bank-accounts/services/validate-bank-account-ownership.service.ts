@@ -13,6 +13,6 @@ export class ValidateBankAccountOwnershipService {
       },
     });
 
-    if (!isOwner) throw new NotFoundException('Bank cccount not found.');
+    if (!isOwner) throw new NotFoundException('Bank Account not found.');
   }
 }
