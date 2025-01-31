@@ -28,8 +28,8 @@ export class BankAccountsController {
   }
 
   @Get()
-  findAll(@ActiveUserId() userId: string) {
-    return this.bankAccountsService.findAll(userId);
+  findAllByUserId(@ActiveUserId() userId: string) {
+    return this.bankAccountsService.findAllByUserId(userId);
   }
 
   @Put(':bankAccountId')
